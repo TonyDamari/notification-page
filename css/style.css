@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+header h1 {
+  font-size: 1.2rem;
+}
+header span {
+  background: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5em;
+  padding: 0.1em 0.6em;
+  margin-left: 0.2em;
+  align-self: center;
+}
+header p {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.container {
+  width: 90%;
+  max-width: 50em;
+  margin: 2em auto;
+}
+
+.posts .post {
+  display: flex;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.posts .post.active {
+  background: hsl(210deg, 60%, 98%);
+  position: relative;
+}
+.posts .post .post-img {
+  width: 3em;
+  margin-right: 1em;
+}
+.posts .post .post-img img {
+  width: 100%;
+}
+.posts .post .post-text {
+  flex: 3;
+}
+.posts .post .post-header {
+  display: flex;
+}
+.posts .post .post-header .username {
+  font-size: 0.9rem;
+}
+.posts .post .picture {
+  width: 4em;
+  margin-left: 0.5em;
+}
+.posts .post .picture img {
+  width: 100%;
+}
+.posts .post .notification {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: normal;
+}
+.posts .post .notification .indicator {
+  display: inline-block;
+  background: red;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  margin-left: 0.3em;
+  font-weight: 800;
+  align-self: center;
+}
+.posts .post .notification .notification-link {
+  color: hsl(224deg, 21%, 14%);
+  cursor: pointer;
+  margin-left: 0.5em;
+}
+.posts .post .notification .notification-link:hover {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+.posts .post .notification .chess-club {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 600;
+}
+.posts .post .time {
+  color: hsl(219deg, 12%, 42%);
+  margin-bottom: 0.5em;
+  font-size: 0.9rem;
+}
+.posts .post .message {
+  border: 1px solid hsl(205deg, 33%, 90%);
+  padding: 1em;
+  color: hsl(219deg, 12%, 42%);
+}
+.posts .post .message:hover {
+  background: hsl(211deg, 68%, 94%);
+}
+
+.attribution {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

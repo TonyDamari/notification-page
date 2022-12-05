@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+// colors
+
+//Primary
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+//Neutral
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-blue: hsl(210, 60%, 98%);
+$light-grayish-blue1: hsl(211, 68%, 94%);
+$light-grayish-blue2: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-grayish-blue: hsl(219, 12%, 42%);
+$very-dark-grayish-blue: hsl(224, 21%, 14%);
+
+body {
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2em;
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    span {
+        background: $blue;
+        color: $white;
+        border-radius: 0.5em;
+        padding: 0.1em 0.6em;
+        margin-left: 0.2em;
+        align-self: center;
+    }
+
+    p {
+        color: $dark-grayish-blue;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 50em;
+    margin: 2em auto;
+}
+
+.posts {
+    .post {
+        display: flex;
+        margin-bottom: 1em;
+        padding: 1em;
+
+        &.active {
+            background: $very-light-grayish-blue;
+            position: relative;
+        }
+
+        .post-img {
+            width: 3em;
+          
+            margin-right: 1em;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .post-text {
+            flex: 3;
+        }
+
+        .post-header {
+            display: flex;
+           
+
+            .username {
+                font-size: 0.9rem;
+            }
+        }
+
+        .picture {
+            width: 4em;
+            margin-left: .5em;
+            
+            img{
+                width: 100%;
+            }
+        }
+
+        .notification {
+            color: $dark-grayish-blue;
+            font-weight: normal;
+
+            .indicator {
+                display: inline-block;
+                background: red;
+                width: 0.5em;
+                height: 0.5em;
+                border-radius: 50%;
+                margin-left: 0.3em;
+                font-weight: 800;
+                align-self: center;
+            }
+
+            .notification-link {
+                color: $very-dark-grayish-blue;
+                cursor: pointer;
+                margin-left: 0.5em;
+
+                &:hover {
+                    color: $blue;
+                    font-weight: 800;
+                }
+            }
+
+            .chess-club {
+                color: $blue;
+                font-weight: 600;
+            }
+        }
+
+        .time {
+            color: $dark-grayish-blue;
+            margin-bottom: 0.5em;
+            font-size: 0.9rem;
+        }
+
+        .message {
+            border: 1px solid $light-grayish-blue2;
+            padding: 1em;
+            color: $dark-grayish-blue;
+
+            &:hover {
+                background: $light-grayish-blue1;
+            }
+        }
+    }
+}
+
+.attribution {
+    text-align: center;
+}
